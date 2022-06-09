@@ -1,9 +1,6 @@
 package ec.edu.espe.arquitectura.prueba.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
@@ -14,6 +11,7 @@ public class Usuario implements Serializable {
 
     private static final long serialVersionUID = 10L;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="cod_usuario")
     private Integer codUsuario;
 

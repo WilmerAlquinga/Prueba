@@ -3,10 +3,12 @@ package ec.edu.espe.arquitectura.prueba.model;
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
+@Table(name = "seg_usuario_espacio")
 public class UsuarioEspacio implements Serializable {
 
     private static final long serialVersionUID = 20L;

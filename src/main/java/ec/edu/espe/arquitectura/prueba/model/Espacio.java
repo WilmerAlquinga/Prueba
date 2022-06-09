@@ -11,6 +11,7 @@ public class Espacio implements Serializable {
 
     private static final long serialVersionUID = 30L;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cod_espacio")
     private Integer codEspacio;
 
